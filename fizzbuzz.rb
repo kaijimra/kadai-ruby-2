@@ -9,21 +9,16 @@ def fizzbuzz(num)
   if num % 5 == 0
     result2 = "Buzz"
   end
-  
+
   if result1 + result2 == ""
     return num
-  else 
+  else
     return result1 + result2
   end
 end
 
 # 以下は動作確認用の記述です
-puts fizzbuzz(1)
-puts fizzbuzz(3)
-puts fizzbuzz(5)
-puts fizzbuzz(15)
-
 
 num_max.times do |num|
-  puts fizzbuzz(num)
+  puts fizzbuzz(num + 1)
 end
