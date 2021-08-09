@@ -1,19 +1,14 @@
 num_max = 100
 
 def fizzbuzz(num)
-  result1 = ""
-  result2 = ""
-  if num % 3 == 0
-    result1 = "Fizz"
-  end
-  if num % 5 == 0
-    result2 = "Buzz"
-  end
-
-  if result1 + result2 == ""
-    return num
+  if num % 3 == 0 && num % 5 == 0
+    return "FizzBuzz"
+  elsif num % 3 == 0
+    return "Fizz"
+  elsif num % 5 == 0
+    return "Buzz"
   else
-    return result1 + result2
+    return num
   end
 end
 
